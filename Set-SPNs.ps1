@@ -1,5 +1,4 @@
-# Kerberos delegation to configure Live-Migration in Kerberos mode for Windows Server 2016 Hyper-V
-# Dynamically pulls nodes from a Windows Failover Cluster
+# Set SPN for Kerberos Live migration
 Import-Module ActiveDirectory
 Import-Module FailoverClusters
 
