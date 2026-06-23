@@ -1,6 +1,6 @@
 # Set SPN for Kerberos Live migration
-Import-Module ActiveDirectory
-Import-Module FailoverClusters
+#Import-Module ActiveDirectory
+#Import-Module FailoverClusters
 
 # Variables
 #$ClusterName = "YOUR_CLUSTER_NAME"  # <-- Set your cluster name here
@@ -9,14 +9,14 @@ Import-Module FailoverClusters
 #$ClusterNodes = Get-ClusterNode -Cluster $ClusterName | Select-Object -ExpandProperty Name
 
 # run from cluster node
-$clusternodes = Get-ClusterNode
+#$clusternodes = Get-ClusterNode
 
 # manually
-#$ClusterNodes = @(
-#    "node1"
-#    "node2"
-#    "node3"
-#)
+$ClusterNodes = @(
+    "node1"
+    "node2"
+    "node3"
+)
 
 Write-Host "Found $($ClusterNodes.Count) cluster nodes: $($ClusterNodes -join ', ')"
 
