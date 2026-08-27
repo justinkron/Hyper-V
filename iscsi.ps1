@@ -1,4 +1,5 @@
 # This script will automatically configure iSCSI targets. Adjust to match your environment.
+# Assumes there are seperate subnets/VLANs, change if this is not the case.
 
 # host iscsi NICs
 # iscsi A VLAN
@@ -6,7 +7,7 @@ $nic1 = "10.31.6.131"
 # iscsi B VLAN
 $nic2 = "10.31.7.131"
 
-# Pure Array iSCSI port IPs
+# iSCSI target IPs on storage
 # iscsi A VLAN
 $target1 = "10.31.6.201"
 $target2 = "10.31.6.202"
